@@ -12,6 +12,7 @@
 		DE1287352BDC120A00E6F51E /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1287342BDC120A00E6F51E /* SidebarView.swift */; };
 		DE1287372BDC123500E6F51E /* SidebarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1287362BDC123500E6F51E /* SidebarViewModel.swift */; };
 		DE12873B2BDC128300E6F51E /* SidebarConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12873A2BDC128300E6F51E /* SidebarConstants.swift */; };
+		DE12873E2BDC147800E6F51E /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12873D2BDC147800E6F51E /* LandingView.swift */; };
 		DEBEF99C2BDBE5E800812B6E /* swift_studiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEF99B2BDBE5E800812B6E /* swift_studiesApp.swift */; };
 		DEBEF99E2BDBE5E800812B6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEF99D2BDBE5E800812B6E /* ContentView.swift */; };
 		DEBEF9A02BDBE5EA00812B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBEF99F2BDBE5EA00812B6E /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		DE1287342BDC120A00E6F51E /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		DE1287362BDC123500E6F51E /* SidebarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewModel.swift; sourceTree = "<group>"; };
 		DE12873A2BDC128300E6F51E /* SidebarConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarConstants.swift; sourceTree = "<group>"; };
+		DE12873D2BDC147800E6F51E /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		DEBEF9982BDBE5E800812B6E /* swift-studies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-studies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBEF99B2BDBE5E800812B6E /* swift_studiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_studiesApp.swift; sourceTree = "<group>"; };
 		DEBEF99D2BDBE5E800812B6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,6 +97,14 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		DE12873C2BDC146C00E6F51E /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				DE12873D2BDC147800E6F51E /* LandingView.swift */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
 		DEBEF98F2BDBE5E800812B6E = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +155,7 @@
 		DEBEF9AA2BDBEB6E00812B6E /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				DE12873C2BDC146C00E6F51E /* Landing */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -227,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE12873E2BDC147800E6F51E /* LandingView.swift in Sources */,
 				DE12873B2BDC128300E6F51E /* SidebarConstants.swift in Sources */,
 				DEBEF99E2BDBE5E800812B6E /* ContentView.swift in Sources */,
 				DEBEF9AE2BDBEB9900812B6E /* Header.swift in Sources */,

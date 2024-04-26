@@ -12,21 +12,25 @@ struct SideBarView: View {
   let list: [SidebarItemType]
 
   var body: some View {
-    List(0..<list.count, id: \.self) { index in
-      let item = list[index]
-      ItemSidebar(icon: item.iconName, text: item.name, isActive: index == viewModel.selectedItemIndex)
-        .listRowSeparator(.hidden)
-        .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
-        .onTapGesture {
-          viewModel.selectedItemIndex = index
-        }
-    }
+      VStack {
+          List(0..<list.count, id: \.self) { index in
+              let item = list[index]
+              ItemSidebar(icon: item.iconName, text: item.name, isActive: index == viewModel.selectedItemIndex)
+                  .listRowSeparator(.hidden)
+                  .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
+                  .onTapGesture {
+                      viewModel.selectedItemIndex = index
+                  }
+          }
+      }
     .overlay(
-      Rectangle().frame(width: 1, height: nil, alignment: .trailing).foregroundColor(Color("border")),
+        Rectangle().frame(width: 1, height: .infinity, alignment: .leading).foregroundColor(Color("border")),
       alignment: .trailing
     )
+    .padding(0)
     .listStyle(GroupedListStyle())
-    .frame(width: sideBarWidth)
+    .frame(width: sideBarWidth, height: .infinity)
+    .frame(alignment: .leading)
     .scrollContentBackground(.hidden)
     .onAppear{
         viewModel.selectedItemIndex = 0
