@@ -42,7 +42,7 @@ struct CardView: View {
             
         }
         
-        .frame(width: width, height: .infinity)
+        .frame(width: width)
         .overlay(
             RoundedRectangle(cornerRadius: 8)
                 .stroke(Color("border"), lineWidth: 2)

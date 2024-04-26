@@ -24,12 +24,13 @@ struct SideBarView: View {
           }
       }
     .overlay(
-        Rectangle().frame(width: 1, height: .infinity, alignment: .leading).foregroundColor(Color("border")),
+        Rectangle().frame(width: 1, alignment: .leading).foregroundColor(Color("border")).frame(maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/),
       alignment: .trailing
     )
     .padding(0)
     .listStyle(GroupedListStyle())
-    .frame(width: sideBarWidth, height: .infinity)
+    .frame(width: sideBarWidth)
+    .frame(maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
     .frame(alignment: .leading)
     .scrollContentBackground(.hidden)
     .onAppear{
