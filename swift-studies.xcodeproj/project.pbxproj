@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE12872F2BDC10EA00E6F51E /* SideBarItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12872E2BDC10EA00E6F51E /* SideBarItemType.swift */; };
+		DE1287332BDC11AA00E6F51E /* ItemSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1287322BDC11AA00E6F51E /* ItemSidebar.swift */; };
+		DE1287352BDC120A00E6F51E /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1287342BDC120A00E6F51E /* SidebarView.swift */; };
+		DE1287372BDC123500E6F51E /* SidebarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1287362BDC123500E6F51E /* SidebarViewModel.swift */; };
+		DE12873B2BDC128300E6F51E /* SidebarConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE12873A2BDC128300E6F51E /* SidebarConstants.swift */; };
 		DEBEF99C2BDBE5E800812B6E /* swift_studiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEF99B2BDBE5E800812B6E /* swift_studiesApp.swift */; };
 		DEBEF99E2BDBE5E800812B6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBEF99D2BDBE5E800812B6E /* ContentView.swift */; };
 		DEBEF9A02BDBE5EA00812B6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBEF99F2BDBE5EA00812B6E /* Assets.xcassets */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE12872E2BDC10EA00E6F51E /* SideBarItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarItemType.swift; sourceTree = "<group>"; };
+		DE1287322BDC11AA00E6F51E /* ItemSidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSidebar.swift; sourceTree = "<group>"; };
+		DE1287342BDC120A00E6F51E /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		DE1287362BDC123500E6F51E /* SidebarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewModel.swift; sourceTree = "<group>"; };
+		DE12873A2BDC128300E6F51E /* SidebarConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarConstants.swift; sourceTree = "<group>"; };
 		DEBEF9982BDBE5E800812B6E /* swift-studies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-studies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBEF99B2BDBE5E800812B6E /* swift_studiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_studiesApp.swift; sourceTree = "<group>"; };
 		DEBEF99D2BDBE5E800812B6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +44,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE1287232BDC0F7D00E6F51E /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				DE1287392BDC126600E6F51E /* Constants */,
+				DE1287302BDC119000E6F51E /* Components */,
+				DE1287342BDC120A00E6F51E /* SidebarView.swift */,
+				DE1287362BDC123500E6F51E /* SidebarViewModel.swift */,
+			);
+			path = Sidebar;
+			sourceTree = "<group>";
+		};
+		DE12872A2BDC102900E6F51E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				DE12872B2BDC102D00E6F51E /* Types */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		DE12872B2BDC102D00E6F51E /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				DE12872E2BDC10EA00E6F51E /* SideBarItemType.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		DE1287302BDC119000E6F51E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DE1287312BDC119600E6F51E /* ItemSidebar */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DE1287312BDC119600E6F51E /* ItemSidebar */ = {
+			isa = PBXGroup;
+			children = (
+				DE1287322BDC11AA00E6F51E /* ItemSidebar.swift */,
+			);
+			path = ItemSidebar;
+			sourceTree = "<group>";
+		};
+		DE1287392BDC126600E6F51E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DE12873A2BDC128300E6F51E /* SidebarConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		DEBEF98F2BDBE5E800812B6E = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +114,7 @@
 		DEBEF99A2BDBE5E800812B6E /* swift-studies */ = {
 			isa = PBXGroup;
 			children = (
+				DE12872A2BDC102900E6F51E /* Domain */,
 				DEBEF9AA2BDBEB6E00812B6E /* Screens */,
 				DEBEF9A92BDBEB5D00812B6E /* Components */,
 				DEBEF99B2BDBE5E800812B6E /* swift_studiesApp.swift */,
@@ -74,6 +136,7 @@
 		DEBEF9A92BDBEB5D00812B6E /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DE1287232BDC0F7D00E6F51E /* Sidebar */,
 				DEBEF9AC2BDBEB8400812B6E /* Header */,
 			);
 			path = Components;
@@ -164,9 +227,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE12873B2BDC128300E6F51E /* SidebarConstants.swift in Sources */,
 				DEBEF99E2BDBE5E800812B6E /* ContentView.swift in Sources */,
 				DEBEF9AE2BDBEB9900812B6E /* Header.swift in Sources */,
 				DEBEF99C2BDBE5E800812B6E /* swift_studiesApp.swift in Sources */,
+				DE12872F2BDC10EA00E6F51E /* SideBarItemType.swift in Sources */,
+				DE1287372BDC123500E6F51E /* SidebarViewModel.swift in Sources */,
+				DE1287332BDC11AA00E6F51E /* ItemSidebar.swift in Sources */,
+				DE1287352BDC120A00E6F51E /* SidebarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
