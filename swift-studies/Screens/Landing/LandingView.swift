@@ -16,7 +16,15 @@ struct LandingView: View {
           VStack {
             Header(title: "Testes", subtitle: "Esta é uma página para testar componentes.")
             VStack {
-                TitledInput(title: "Teste de input", size: 0.7, padding: 12, type: "", value: $testValue)
+                CardView(title: "Card de teste", subtitle: "Este card serve apenas para testar componentes.", width: 800, ChildrenView: AnyView(
+                        VStack(alignment: .leading, spacing: 12) {
+                            Image(systemName: "scribble.variable")
+                                .padding(.leading, 16)
+                                .imageScale(.large)
+                        }
+                        .padding(.top, 16)
+                        .padding(.bottom, 16)
+                ))
             }
             .frame(maxHeight: .infinity)
             .frame(maxWidth: .infinity)
